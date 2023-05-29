@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <style>
+        header {
+            background-color: rgb(114, 114, 250);
+            padding: 8px;
+        }
+
+        .container{
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: black;
+            padding: 3px;
+            margin-top: 5px;
+        }
+
+        footer h6 {
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MotorsMAX</h1>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="Images_M11/slide1.png">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="Images_M11/slide2.png">
+                </div>
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="Images_M11/slide3.png">
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Veiculos mais vendidos</h1>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        BWM Z4
+                    </header>
+                    <img src="Images_M11/carro-bmw.png">
+                    <div class="card-body">
+                        <h4>O modelo mais vendido da BMW</h4>
+                        <p>O carro que está sendo um sucesso no mundo inteiro</p>
+                        <a href="#" class="btn btn-primary">leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>29/05/2023 às 17:00:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        VW Fusca
+                    </header>
+                    <img src="Images_M11/fusca.png">
+                    <div class="card-body">
+                        <h4>Sucesso absoluto dos anos 50</h4>
+                        <p>Um dos carros mais vendidos da história do Brasil</p>
+                        <a href="#" class="btn btn-primary">leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>29/05/2023 às 18:00:00</time>
+                    </footer>
+                </article>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        BMW M 1000
+                    </header>
+                    <img src="Images_M11/moto-bmw.png">
+                    <div class="card-body">
+                        <h4>A moto de mais sucesso na atualidade</h4>
+                        <p>A moto da BMW que está fazendo sucesso no mundo inteiro</p>
+                        <a href="#" class="btn btn-primary">leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>29/05/2023 às 19:00:00</time>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h6>2023 &copy; MotorsMAX - Todos os direitos reservados</h6>
+    </footer>
+    <script src="./bootstrap.bundle.min.js"></script>
+</body>
+</html>
